@@ -1,0 +1,811 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --green: #10B582;
+    --orange: #FA9F42;
+    --light: #FDFDFD;
+    --dark: #353A5A;
+    --dark1: #353a5a21;
+}
+
+h1 {
+    font-family: "Raleway", sans-serif;
+    font-size: 58px;
+    font-weight: 500;
+    line-height: 69.6px;
+    text-align: center;
+    color: var(--light);
+}
+
+h2 {
+    font-family: "Raleway", sans-serif;
+    font-size: 58px;
+    font-weight: 500;
+    line-height: 58px;
+    color: var(--dark);
+}
+
+h3 {
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18.2px;
+    text-align: center;
+    color: var(--dark);
+}
+
+p {
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--dark);
+}
+
+a {
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    color: var(--dark);
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    align-items: center;
+    color: var(--light);
+    border-radius: 0px 20px 0px 20px;
+    background-color: #FA9F42;
+    border: none;
+    outline: none;
+    width: 230px;
+    padding: 20px 0;
+}
+
+button:hover {
+    background-color: #d58330;
+}
+
+button:active {
+    background-color: #9b5f22;
+}
+
+a.button {
+    display: inline-block;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* nav секция */
+nav {
+    width: 100%;
+    height: 110px;
+    position: absolute;
+}
+
+.nav_block {
+    height: 110px;
+    width: 100%;
+}
+
+.nav_list {
+    padding-top: 40px;
+    gap: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_text {
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    color: var(--light);
+}
+
+.nav_text:hover {
+    border-bottom: 2px dashed #FA9F42;
+}
+
+/* стиль header */
+header {
+    background-color: var(--green);
+    height: 100vh;
+    min-height: 800px;
+    text-align: center;
+    padding: 200px 0;
+    box-sizing: border-box;
+}
+
+.header_logo {
+    margin-bottom: 40px;
+}
+
+.header_title {
+    width: 542px;
+    margin: 0 auto 20px;
+}
+
+.header_text {
+    color: var(--light);
+    width: 380px;
+    margin: 0 auto 50px;
+}
+
+.header_img {
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    bottom: -95px;
+}
+
+.border_header {
+    left: 30px;
+    bottom: -65px;
+    position: absolute;
+}
+
+.header_img2 {
+    object-fit: cover;
+    position: absolute;
+    right: 0;
+    top: -50px;
+}
+
+.border_header2 {
+    right: 30px;
+    top: -70px;
+    position: absolute;
+}
+
+.header_logotype {
+    gap: 30px;
+    top: -100px;
+    left: -10px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+
+.header_down {
+    display: flex;
+    position: absolute;
+    transform: rotate(-90deg);
+    bottom: -40px;
+    right: -65px;
+    gap: 15px;
+}
+
+.arrow {
+    transform: rotate(90deg);
+}
+
+.down_text {
+    color: var(--light);
+}
+
+/* numbers секция */
+.numbers {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.numbers_cards {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.numbers_card_title {
+    margin-bottom: 15px;
+    color: var(--green);
+}
+
+.numbers_card {
+    width: 270px;
+    text-align: center;
+}
+
+/* teachers секция */
+.teachers {
+    padding: 120px 0 120px;
+}
+
+.teacher_block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.teacher_text {
+    flex-grow: 1;
+    flex-basis: 50%;
+    padding-right: 85px;
+    box-sizing: border-box;
+}
+
+.teacher_title {
+    margin-bottom: 20px;
+}
+
+.teacher_description {
+    margin-bottom: 50px;
+}
+
+.teacher_description p {
+    margin-bottom: 20px;
+}
+
+.teacher_cards {
+    flex-grow: 1;
+    flex-basis: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.teacher_card {
+    flex-basis: 170px;
+    text-align: center;
+}
+
+.teacher_card img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.teacher_button {
+    background-color: var(--green);
+}
+
+.teacher_card:nth-child(1) img {
+    border-radius: 0px 0px 0px 80px;
+}
+
+.teacher_card:nth-child(2) img {
+    border-radius: 80px 0px 80px 0px;
+}
+
+.teacher_card:nth-child(3) img {
+    border-radius: 0px 0px 80px 0px;
+}
+
+.teacher_card:nth-child(4) img {
+    border-radius: 80px 0px 0px 0px;
+}
+
+.teacher_card:nth-child(5) img {
+    border-radius: 80px 0px 80px 0px;
+}
+
+.teacher_card:nth-child(6) img {
+    border-radius: 0px 80px 0px 0px;
+}
+
+.teacher_card p {
+    font-size: 14px;
+}
+
+/* format секция */
+.format {
+    background-color: var(--green);
+    padding: 120px 0 120px;
+}
+
+.format_block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.format_text {
+    flex-grow: 1;
+    flex-basis: 50%;
+}
+
+.format_title {
+    color: var(--light);
+}
+
+.format_description {
+    color: var(--light);
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.format_img {
+    flex-grow: 1;
+    flex-basis: 50%;
+}
+
+.img_format {
+    position: relative;
+    width: 470px;
+    height: 332px;
+    border-radius: 0px 120px 0px 0px;
+}
+
+.format_dash {
+    position: absolute;
+    top: -25px;
+    left: 30px;
+}
+
+/* course секция */
+.course {
+    padding: 120px 0;
+    text-align: center;
+}
+
+.course_cards {
+    margin-bottom: 60px;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.course_card {
+    box-shadow: 5px 5px 30px 0px #6565651F;
+    width: 270px;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.course_card img {
+    height: 155px;
+    width: 100%;
+    object-fit: contain;
+}
+
+.text-course {
+    padding: 15px;
+    text-align: left;
+}
+
+.course-button {
+    background-color: var(--green);
+}
+
+/* baner сеция */
+.banner {
+    padding: 120px 0 120px;
+    background-image: url(banner.png);
+    box-sizing: border-box;
+    background-size: cover;
+}
+
+.banner_block {
+    width: 50%;
+    margin-left: auto;
+    padding-right: 70px;
+    box-sizing: border-box;
+}
+
+.banner_description {
+    margin: 20px 0 50px;
+}
+
+/* footer секция */
+footer {
+    border-top: 2px solid var(--dark1);
+}
+
+.footer {
+    padding: 20px 0 30px;
+    margin-top: 100px;
+    border-top: 2px solid var(--dark1);
+}
+
+.footer_block {
+    display: flex;
+    justify-content: space-between;
+    padding: 120px 0 0;
+}
+
+.footer_cards {
+    display: flex;
+    gap: 70px;
+}
+
+.footer_card {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 20%;
+}
+
+.footer_text {
+    margin-bottom: 20px;
+    line-height: 15px;
+}
+
+.footer_title {
+    line-height: 16px;
+    font-size: 16px;
+    text-align: start;
+    margin-bottom: 31px;
+}
+
+.footer_description {
+    margin-top: 27px;
+    line-height: 18.2px;
+    font-size: 14px;
+}
+
+.footer_icons {
+    display: flex;
+    gap: 25px;
+    margin-top: 47px;
+
+}
+
+.footer_card:nth-child(1) {
+    flex-grow: 1;
+    flex-basis: 18%;
+}
+
+.footer_card:nth-child(2) {
+    flex-grow: 1;
+    flex-basis: 90px;
+}
+
+.footer_card:nth-child(3) {
+    flex-grow: 1;
+    flex-basis: 90px;
+}
+
+.footer_card:nth-child(4) {
+    flex-grow: 1;
+    flex-basis: 120px;
+}
+
+.footer_card:nth-child(5) {
+    flex-grow: 1;
+    flex-basis: 150px;
+}
+
+.footer_copy {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0 30px;
+}
+
+.footer_copy_links {
+    display: flex;
+    gap: 30px;
+}
+
+.header_img {
+    /*картинка слева*/
+    width: 240px;
+    height: 300px;
+    border-radius: 0px 80px 0px 0px;
+}
+
+.header_img2 {
+    /*картинка справа*/
+    width: 240px;
+    height: 300px;
+    border-radius: 80px 0px 0px 0px;
+}
+
+@media screen and (max-width:1200px) {
+    .container {
+        width: 960px;
+    }
+
+    h1 {
+        font-family: "Raleway", sans-serif;
+        font-size: 38px;
+        font-weight: 500;
+        line-height: 35px;
+        text-align: center;
+        color: var(--light);
+    }
+
+    .header_img {
+        width: 170px;
+        height: 220px;
+        border-radius: 0px 60px 0px 0px;
+        left: 30px;
+        bottom: -50px;
+    }
+
+    .border_header {
+        width: 190px;
+        height: 220px;
+        left: 30px;
+        bottom: -35px;
+    }
+
+    .header_img2 {
+        width: 170px;
+        height: 220px;
+        border-radius: 60px 0px 0px 0px;
+        right: 30px;
+        top: -50px;
+    }
+
+    .border_header2 {
+        width: 190px;
+        height: 220px;
+        right: 30px;
+        top: -60px;
+    }
+
+    .header_logotype {
+        gap: 30px;
+        top: -100px;
+        left: 20px;
+    }
+
+    .header_down {
+        transform: rotate(-90deg);
+        bottom: -40px;
+        right: -30px;
+        gap: 15px;
+    }
+
+    .format_img {
+        flex-basis: 25%;
+    }
+
+    .format_block {
+        gap: 60px;
+    }
+
+    .img_format {
+        width: 370px;
+        height: 232px;
+        border-radius: 0px 60px 0px 0px;
+    }
+
+    .format_dash {
+        position: absolute;
+        width: 380px;
+        height: 232px;
+        top: -20px;
+        left: 30px;
+    }
+
+    .banner_block {
+        width: 70%;
+    }
+
+    .banner {
+        background-position: 100%;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .container {
+        width: 768px;
+    }
+
+    /* header секция */
+    .border_header {
+        display: none;
+    }
+
+    .border_header2 {
+        display: none;
+    }
+
+    .header_img {
+        display: none;
+    }
+
+    .header_img2 {
+        display: none;
+    }
+
+    /* teacher секция */
+    .teacher_block {
+        padding-left: 15px;
+    }
+
+    .teacher_cards {
+        padding-right: 10px;
+    }
+
+    /* format секция */
+    .img_format {
+        width: 310px;
+        height: 260px;
+        padding-left: 20px;
+        object-fit: cover;
+    }
+
+    .format_dash {
+        width: 320px;
+        height: 245px;
+        top: -20px;
+        left: 30px;
+    }
+
+    /* footer секция */
+    .footer_card:nth-child(1) {
+        flex-grow: 1;
+        flex-basis: 5%;
+    }
+
+    .footer_card:nth-child(2) {
+        flex-grow: 1;
+        flex-basis: 45px;
+    }
+
+    .footer_card:nth-child(3) {
+        flex-grow: 1;
+        flex-basis: 30px;
+    }
+
+    .footer_card:nth-child(4) {
+        flex-grow: 1;
+        flex-basis: 25px;
+    }
+
+    .footer_card:nth-child(5) {
+        flex-grow: 1;
+        flex-basis: 35px;
+    }
+
+    .footer_card {
+        flex-basis: 10%;
+    }
+
+    .footer_cards {
+        gap: 50px;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .container {
+        width: 570px;
+    }
+
+    h2 {
+        font-size: 50px;
+        font-weight: 500;
+        line-height: 50px;
+    }
+
+    .nav_list {
+        display: none;
+    }
+
+    .numbers {
+        padding-bottom: 20px;
+    }
+
+    .numbers_cards {
+        flex-wrap: wrap;
+    }
+
+    .teacher_block {
+        flex-direction: column;
+    }
+
+    .teacher_cards {
+        margin-top: 50px;
+    }
+
+    .format_block {
+        flex-direction: column;
+    }
+
+    .teacher_card {
+        flex-basis: 140px;
+    }
+
+    .teacher_card img {
+        height: 140px;
+    }
+
+    .img_format {
+        width: 470px;
+        height: 332px;
+        border-radius: 0px 90px 0px 0px;
+        object-fit: cover;
+    }
+
+    .format_dash {
+        top: -35px;
+        left: 40px;
+        width: 470px;
+        height: 350px;
+    }
+
+    .format_text {
+        padding-left: 20px;
+    }
+
+    .course_cards {
+        flex-wrap: wrap;
+    }
+
+    .banner_block {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .footer_copy_links {
+        gap: 10px;
+        margin-left: 25px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .container {
+        width: auto;
+    }
+
+    .header_title {
+        width: 326px;
+    }
+
+    .header_down {
+        bottom: -180px;
+    }
+
+    .numbers_cards {
+        justify-content: center;
+    }
+
+    .teacher_cards {
+        justify-content: center;
+    }
+
+    .format_img {
+        display: none;
+    }
+
+    .course_cards {
+        justify-content: center;
+        gap: 60px;
+    }
+
+    .banner_title {
+        font-size: 40px;
+        font-weight: 500;
+        line-height: 40px;
+    }
+
+    .banner_block {
+        padding-left: 40px;
+        width: 100%;
+    }
+
+    .footer {
+        margin-top: 50px;
+    }
+
+    .footer_block {
+        padding: 40px 0 0;
+    }
+
+    .footer_card {
+        padding-left: 20px;
+    }
+
+    .footer_copy {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
